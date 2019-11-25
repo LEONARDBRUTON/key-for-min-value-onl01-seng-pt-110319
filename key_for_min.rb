@@ -6,7 +6,9 @@ def key_for_min_value(name_hash)
   name_hash.collect do |key, value|
 if value_a <=> value
   return current_minimum_val
-else return nil
+elsif current_minimum_val > value
+  current_minimum_val = value
+  current_key_assoc_w_min_val = key
 end
 end
     
