@@ -12,39 +12,7 @@ def key_for_min_value(hash)
   end
     key_a
   end
-      
-      
-=begin   
-  elsif 
-      value_a > value
-      value_a = value
-    key_a = key
-    end
-    return key_a
-  end
-end
   
-
- lowest_key = nil
- lowest_value = nil
-	  hash.each do |k, v|
-	    if lowest_value == nil || v < lowest_value
-        lowest_value = v
-	      lowest_key = k
-      end
-  end
-  lowest_key
-	=end
-
-
-
-
-
-
-
-
-
-
 
 
 
