@@ -3,9 +3,11 @@
 
 def key_for_min_value(name_hash)
   value_a = nil
+  key_a = nil
   name_hash.collect do |key, value|
-  if value_a <=> value
-      return value
+  if value_a == nil
+      value_a = value
+      key = key
   elsif value_a > value
       value_a = value
     value = key
@@ -30,10 +32,7 @@ current_minimum_val = nil
       current_minimum_val = value 
       current_key_assoc_w_min_val = key 
     else 
-    #we keep iterating and if the current min val
-    #i greater than our old value we replace it
-    #with the new lower value and return the assoc'd
-    #key. 
+  
       if current_minimum_val > value 
         current_minimum_val = value
         current_key_assoc_w_min_val = key 
