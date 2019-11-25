@@ -14,7 +14,6 @@ def key_for_min_value(name_hash)
 end
     
 
-end
 =begin
 current_minimum_val = nil 
   current_key_assoc_w_min_val = nil 
